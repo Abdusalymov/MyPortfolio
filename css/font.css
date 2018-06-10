@@ -1,0 +1,52 @@
+@font-face{
+	font-family: 'bernierDistressed';
+	src:url('../fonts/BERNIERDistressed-Regular.otf');
+}
+@font-face{
+	font-family: 'bernierRegular';
+	src:url('../fonts/BERNIERRegular-Regular.otf');
+}
+@font-face{
+	font-family: 'bernierShade';
+	src:url('../fonts/BERNIERShade-Regular.otf');
+}
+@font-face{
+	font-family: 'webfont';
+	src:url('../fonts/fontawesome-webfont.ttf');
+}
+@font-face{
+	font-family: 'awesom';
+	src:url('../fonts/FontAwesome.otf');
+}
+@font-face{
+	font-family: 'robotoB';
+	src:url('../fonts/Roboto-Bold.ttf');
+}
+@font-face{
+	font-family: 'robotoBi';
+	src:url('../fonts/Roboto-BoldItalic.ttf');
+}
+@font-face{
+	font-family: 'robotoI';
+	src:url('../fonts/Roboto-Italic.ttf');
+}
+@font-face{
+	font-family: 'robotoL';
+	src:url('../fonts/Roboto-Light.ttf');
+}
+@font-face{
+	font-family: 'robotoLi';
+	src:url('../fonts/Roboto-LightItalic.ttf');
+}
+@font-face{
+	font-family: 'robotoM';
+	src:url('../fonts/Roboto-Medium.ttf');
+}
+@font-face{
+	font-family: 'robotoMi';
+	src:url('../fonts/Roboto-MediumItalic.ttf');
+}
+@font-face{
+	font-family: 'robotoR';
+	src:url('../fonts/Roboto-Regular.ttf');
+}

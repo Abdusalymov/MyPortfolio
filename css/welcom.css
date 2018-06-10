@@ -1,0 +1,218 @@
+@import 'normalize.css';
+@import 'font.css';
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	margin:auto;
+	opacity: 0;
+
+}
+.parallax {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	left:-10%;
+	top:-10%;
+	width: 120%;
+	height: 120%;
+} 
+.box2{
+	background-image:url('../images/parallax/Layer-1.png');
+} 
+.box3{
+	background-image:url('../images/parallax/Layer-2.png');
+}
+.box6{
+	background-image:url('../images/parallax/Layer-4.png');
+} 
+.box7{
+	background-image:url('../images/parallax/Layer-6.png');
+} 
+.box8{
+	background-image:url('../images/parallax/Layer-7.png');
+} 
+.box9{
+	background-image:url('../images/parallax/Layer-8.png');
+
+}  
+.box10{
+	background-image:url('../images/parallax/Layer-5.png');
+}  
+.authorization_btn p{
+	width: 145px;
+	margin: 25px auto;
+	position: relative;
+	z-index: 1000;	
+}
+.authorization_btn p a{
+	text-decoration: none;
+	color: #fff;
+	font: 1rem robotoM;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+}
+.authorization_btn p a:hover{
+	color: #00bfa5;
+	background-color: #fff;
+}
+.entry_wrapper{
+	width: 95%;
+	height: 400px;
+	max-width: 380px; 
+	margin:auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top:0; 
+}
+.entry{
+	height: 350px;
+	background-color: rgba(252,252,252,.85);
+	border-radius: 5px 5px 0 0;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.me{
+	width: 215px;
+	display: flex;
+  flex-direction: column;
+	margin-top: 40px;
+	
+}
+.me img{
+	width: 145px;
+	height: 145px;
+	margin: auto;
+}
+.me h1{
+	font: 1.3125rem robotoM;
+	color: #455a64;
+}
+.me h2{
+	font: .875rem robotoR;
+	color: #455a64;
+	margin-top: 0;
+}
+.social_line{
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin-top: 20px;
+}
+.social_line a{
+  align-self: center;
+}
+.social_line a svg:hover path{
+	fill: #009688;
+}
+.menu_line{
+	width: 100%;
+	/* margin-top: 60px; */
+	position: relative;
+}
+.menu_line ul{
+	display: flex;
+	margin: 0;
+	padding:0;
+}
+.menu_line li:nth-child(-n+2){
+	border-right: 2px solid #73c8bf; 
+}
+.menu_line li:nth-child(1){
+	border-radius: 0 0 0 5px; 
+}
+.menu_line li:nth-child(3){
+	border-radius: 0 0 5px 0; 
+}
+.menu_line li{
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+  justify-content: center;
+	overflow: hidden;
+}
+.menu_line a{
+	text-decoration: none;
+	color: #fff;
+	font: .875rem robotoM;
+	background-color: rgba(0, 191, 165, 0.85);
+	padding: 15px 0;
+	width: 100%;
+	text-align: center;
+}
+.menu_line a:hover{
+	background-color: rgb(0%, 59%, 53%, .85);
+	
+}
+
+.preloader{
+	background: url('../images/other/bg.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	position: absolute;
+	z-index: 1500;
+}
+
+@-webkit-keyframes strokeanim {
+	from{
+	stroke-dashoffset: 565.48;
+		
+	}
+	to {
+		stroke-dashoffset: 100;
+	}
+}
+
+@keyframes strokeanim {
+	from{
+	stroke-dashoffset: 565.48;
+		
+	}
+	to {
+		stroke-dashoffset: 100;
+	}
+}
+#dashstart1 {
+	stroke-dasharray: 565.48;
+	-webkit-animation: strokeanim 2s;
+	        animation: strokeanim 2s;
+}
+#dashstart2 {
+	stroke-dasharray: 565.48;
+	-webkit-animation: strokeanim 4s;
+	        animation: strokeanim 4s;
+}
+#dashstart3 {
+	stroke-dasharray: 565.48;
+	-webkit-animation: strokeanim 4s;
+	        animation: strokeanim 4s;
+}
+
+
+
+@media only screen and (max-width:1200px){
+	.parallax{
+		display: none;
+	}
+	.container {
+		background-image: url('../images/other/mountains_for_iphone.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+@media only screen and (min-width:800px){
+	.authorization_btn p{
+		margin-right: 5%;
+	}
+}

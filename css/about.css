@@ -1,0 +1,497 @@
+@import 'normalize.css';
+@import 'font.css';
+body{
+	max-width: 1800px;
+}
+header{
+	background:url(../images/icon/bg.svg)bottom no-repeat,
+	url('../images/other/mountains_for_iphone.jpg') center no-repeat;
+	background-size: contain, cover;
+	width: 100%;
+	height: 100vh;
+}
+.open_menu{
+	background-color: rgba(0, 191, 165, .85);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	margin:0;
+	padding: 0; 
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 99999;
+}
+.open_menu li{
+	list-style-type: none;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.open_menu li a{
+	text-decoration: none;
+	color: #ffffff;
+	font: 2.18rem bernierRegular;
+}
+
+.rectangleL,
+.rectangleR{
+	height: 5px;
+	width: 22px;
+	background-color: rgba(255, 255, 255, .2);
+}
+.rectangleL{
+	margin-right: 20px;
+}
+.rectangleR{
+	margin-left: 20px;
+}
+.open_menu li:hover .rectangleL,
+.open_menu li:hover .rectangleR{
+	background-color: rgba(255, 255, 255, 1);
+	
+}
+.close_cross{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+.close_cross svg{
+	cursor: pointer;
+	user-select: none;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
+	padding: 10px 0 0 0; 
+}
+.aboutMe_socila_line{
+	width: 125px;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutMe_socila_line a svg:hover path{
+	fill: #fff;
+}
+#hamburger_open{
+	cursor: pointer;
+}
+.me_about{
+	display: flex;
+  align-items: center;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30%;
+}
+
+.me_about h1{
+	font: 1.3125rem robotoM;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.me_about h2{
+	font: .875rem robotoL;
+	color: #fff;
+	margin-top: 5px;
+}
+.arrow_down{
+	position: absolute;
+	top: 70%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	cursor: default;
+}
+.arrow_svg{
+	cursor: pointer;
+}
+.arrow_svg:hover path{
+	fill: #fff;
+}
+.wrapper_who_am_I{
+	max-width: 470px;
+	margin: auto;
+	padding-bottom: 40px;
+}
+.img_hider{
+	height: 390px;
+	overflow: hidden;
+}
+.img_hider img{
+	width: 100%;
+	max-width: 470px;
+	margin: auto;
+	display: block;
+}
+.who_am_I{
+	background: #efeee9;
+}
+.who_am_I h1{
+	max-width: 355px;
+	font: 2.1875rem bernierRegular;
+	color: #373e42;
+	background: url('../images/icon/about_header.svg') top no-repeat;
+	background-size: 62%;
+	padding: 17px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:  0 auto;
+}
+.who_am_I h2{
+	font: 1.3125rem bernierRegular;
+	color: #455a64;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.who_am_I p{
+	font: .875rem RobotoR;
+	color: #455a64;
+	text-align: left;
+	line-height: 24px;
+	max-width: 470px;
+	width: 95%;
+	margin: auto;
+}
+.who_am_I p:last-child{
+	margin-top: 10px;
+}
+
+.wrapper_can_I_help{
+	max-width: 470px;
+	margin: auto;
+}
+.can_I_help h2{
+	font: 1.3125rem bernierRegular;
+	color: #455a64;
+	text-align: center;
+	margin: 0;
+	padding: 30px 0 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+.rectangle2L,
+.rectangle2R{
+	height: 5px;
+	width: 22px;
+	background-color: #d7d8d9;
+}
+.rectangle2L{
+	margin-right: 20px;
+}
+.rectangle2R{
+	margin-left: 20px;
+}
+
+.can_I_help h3{
+	font: 1.3125rem RobotoM;
+	color: #4d5963;
+	text-align: center;
+}
+.can_I_help p{
+	font: .875rem RobotoR;
+	color: #455a64;
+	text-align: left;
+	line-height: 24px;
+	width: 95%;
+	margin: auto;
+}
+.can_I_help svg .circle1{
+	stroke: #dfdcd5;
+}
+.can_I_help svg .circle2{
+	stroke: #10c0a7;
+}
+.can_I_help svg text{
+	font: .8125rem RobotoM;
+	fill: #10c0a7;
+}
+.svg_align_frontSkills,
+.svg_align_backSkills,
+.svg_align_flowSkills{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.sfrontend_skills h3,
+.backend_skills h3,
+.WorkFlow_skills h3{
+	margin: 0;
+}
+.contacts_footer_wrapper{
+	height: 100vh;
+	width: 100%;
+	background: url('../images/other/map.jpg') center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.contacts{
+	max-width: 380px;
+	height: 280px;
+	background-color: rgba(252, 252, 252, .85);
+	border-radius: 5px;
+}
+.contacts h1{
+	text-align: center;
+	font: 2.1875rem bernierRegular;
+	color: #373e42;
+	margin-top: 0;
+	padding-top: 20px;
+}
+.contacts h1:before,
+.contacts h1:after{
+	content: url('../images/other/rectangle.jpg');
+	position: relative;
+	bottom: 9px;
+	margin: 0 20px;
+}
+.contacts ul{
+	padding-left: 10px;
+	margin: 0;
+	height: 153px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.contacts li,
+.contacts li a{
+	color: #455a64;
+	font: 1rem RobotoM;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.contacts ul li:first-child {
+	background: url('../images/icon/skype.svg') 0px 0px no-repeat;
+	height: 30px;
+	padding:  0 0 0 30px;
+}
+.contacts ul li:nth-child(2) {
+	background: url('../images/icon/envelope.svg') 0px 3px no-repeat;
+	height: 30px;
+	padding:  0 0 0 30px;
+}
+.contacts ul li:nth-child(3) {
+	background: url('../images/icon/phone.svg') 0px 3px no-repeat;
+	height: 30px;
+	padding:  0 0 0 30px;
+}
+.contacts ul li:nth-child(4) {
+	background: url('../images/icon/map_marker.svg') 0px 0px no-repeat;
+	height: 30px;
+	padding:  0 0 0 30px;
+}
+
+footer{
+	background-color: rgba(55, 62, 66, .85);
+}
+
+.up_side{
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  align-items: center;
+	padding-top: 20px;
+
+}
+
+.up_side .menu_footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	width: 85%;
+	max-width: 405px;
+	margin: auto;
+}
+.up_side .menu_footer li a{
+	color: #ffffff;
+	font: .8125rem robotoM;
+	text-decoration: none;
+}
+.up_side .menu_footer li,
+.up_side .social_footer li{
+	list-style-type: none;
+}
+.up_side .active a{
+	color: #00bfa5;
+}
+
+.social_footer {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	padding-left: 0;
+}
+.social_footer li:hover svg path{
+	fill: #ffffff;
+}
+.down_side{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.down_side p{
+	font: .8125rem robotoL;
+	color: rgba(255, 255, 255, .5);
+}
+.down_side .my_text{
+	text-align: center;
+}
+.my_text p{
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 470px){
+	.who_am_I p,
+	.can_I_help p{
+		width: 100%;
+	}
+	.contacts_wrapper{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.contacts{
+		width: 380px;
+	}
+	.contacts ul{
+		padding-left: 40px;
+	}
+}
+@media only screen and (min-width:1200px){
+	header{
+		background: url(../images/icon/portfolio_header.svg) 50% 33% no-repeat, 
+		url(../images/other/mountains_for_1980.jpg);
+    background-size: auto, auto;
+}
+		
+	.about_me{
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: -300px;
+	}
+	.me_about h1{
+		font: 2.1875rem robotoM;
+	}
+	.me_about h2{
+		font: 1rem robotoL;
+		
+	}
+	.wrapper_who_am_I,
+	.wrapper_can_I_help{
+		max-width: 90%;
+		margin: auto;
+	}
+	.wrapper_who_am_I{
+		margin: 121px auto 0 auto;
+	}
+	
+	.wrapper_who_am_I h1{
+		font-size: 3.93rem;
+	}
+	.wrapper_who_am_I h2{
+		font-size: 2.18rem;
+	}
+	.wrapper_can_I_help h2{
+		font-size: 2.18rem;
+	}
+	.wrapper_can_I_help{
+		margin: 202px auto 0 auto;
+	}
+	.who_am_I,
+	.can_I_help{
+		width: 50%;
+	}
+	.who_am_I{
+		background: url(../images/icon/about_bg_left.svg) top no-repeat;
+		background-size: cover;
+		padding-bottom: 65px;
+	}
+	.can_I_help{
+		background: url(../images/icon/about_bg_right.svg)top no-repeat;
+		background-size: cover;
+		
+	} 
+	.can_I_help h3{
+		font-size: 1.75rem;
+		text-align: left;
+	}
+	.can_I_help h2{
+		margin: -60px auto 0 auto;
+	}
+	.svg_align_frontSkills, 
+	.svg_align_backSkills,
+	.svg_align_flowSkills {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+	}
+	
+	.up_side{
+		height: 70px;
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 0 40px;
+	}
+	.up_side .menu_footer{
+		margin: 0;
+	}
+	.down_side{
+		height: 70px;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 40px;
+	}
+	.my_text p{
+		width: 500px;
+		margin: 0;
+		text-align: left;
+	}
+	.copyright p{
+		text-align: right;
+	}
+}
+@media only screen and (min-width: 1600px){
+	.contacts_footer_wrapper{
+		background: url('../images/other/map_1600px.jpg') center no-repeat;
+		background-size: cover;
+	}
+	.svg_align_frontSkills, 
+	.svg_align_backSkills,
+	.svg_align_flowSkills{
+		justify-content: flex-start;
+	}
+	
+}
+@media only screen and (min-width: 1800px){
+	.wrapper_who_am_I{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		width: 100%;
+		max-width: 100%;
+		margin: 200px auto 0 auto;
+	}
+	.wrapper_who_am_I h1{
+		margin: -36px 0 0 0;
+		height: 50px;
+		background-size: 99% 100%;
+	}
+	.align_1800px{
+		margin: -17px 0 0 0;
+	}
+}
