@@ -1,6 +1,6 @@
 @font-face{
 	font-family: 'bernierDistressed';
-	src:url('../fonts/BERNIERDistressed-Regular.otf');
+	src:('../fonts/BERNIERDistressed-Regular.otf');
 }
 @font-face{
 	font-family: 'bernierRegular';

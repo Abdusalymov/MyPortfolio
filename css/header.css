@@ -1,0 +1,155 @@
+body{
+	max-width: 1800px;
+}
+header{
+	background:url('../images/icon/bg.svg')bottom no-repeat,
+	url('../images/other/mountains_for_iphone.jpg') center no-repeat;
+	background-size: contain, cover;
+	width: 100%;
+	height: 100vh;
+}
+.inline-svg-icon{
+	height: 25px;
+	width: 30px;
+	fill: rgba(255, 255, 255, .5);
+}
+.inline-svg-icon:hover,
+.inline-svg-icon_gamburger:hover{
+	fill: #fff;
+}
+.inline-svg-icon_gamburger{
+	height: 50px;
+	width: 50px;
+	fill: rgba(255, 255, 255, .5);
+	cursor: pointer;
+}
+.open_menu{
+	background-color: rgba(0, 191, 165, .85);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	margin:0;
+	padding: 0; 
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 99999;
+}
+.open_menu li{
+	list-style-type: none;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.open_menu li a{
+	text-decoration: none;
+	color: #ffffff;
+	font: 2.18rem bernierRegular;
+}
+
+.rectangleL,
+.rectangleR{
+	height: 5px;
+	width: 22px;
+	background-color: rgba(255, 255, 255, .2);
+}
+.rectangleL{
+	margin-right: 20px;
+}
+.rectangleR{
+	margin-left: 20px;
+}
+.open_menu li:hover .rectangleL,
+.open_menu li:hover .rectangleR{
+	background-color: rgba(255, 255, 255, 1);
+	
+}
+.close_cross{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+.close_cross svg{
+	cursor: pointer;
+	user-select: none;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
+	padding: 30px 0 0 0; 
+}
+.aboutMe_socila_line{
+	width: 125px;
+	display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.aboutMe_socila_line a svg:hover path{
+	fill: #fff;
+}
+#hamburger_open{
+	cursor: pointer;
+}
+.me_about{
+	display: flex;
+  align-items: center;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30%;
+}
+
+.me_about h1{
+	font: 1.3125rem robotoM;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.me_about h2{
+	font: .875rem robotoL;
+	color: #fff;
+	margin-top: 5px;
+}
+.arrow_down{
+	position: absolute;
+	top: 70%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	cursor: default;
+	outline: none; 
+}
+.arrow_svg{
+	cursor: pointer;
+}
+.arrow_svg:hover path{
+	fill: #fff;
+}
+@media only screen and (min-width:1200px){
+	header{
+		background: url(../images/icon/portfolio_header.svg) 50% 33% no-repeat, 
+		url(../images/other/mountains_for_1980.jpg);
+    background-size: auto, auto;
+}
+		
+	.about_me{
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: -300px;
+	}
+	.me_about h1{
+		font: 2.1875rem robotoM;
+	}
+	.me_about h2{
+		font: 1rem robotoL;
+		
+	}
+	
+}

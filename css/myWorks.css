@@ -1,0 +1,33 @@
+@import 'normalize.css';
+@import 'font.css';
+@import 'header.css';
+@import 'footer.css';
+header{
+	background:url('../images/icon/bg.svg')bottom no-repeat,
+	url('../images/other/mountains_for_iphone.jpg') center no-repeat;
+	background-size: 220% 30%,cover;
+}
+.my_works{
+	max-width: 355px;
+	font: 2.1875rem bernierRegular;
+	color: #373e42;
+	background: url('../images/icon/works_header.svg') top no-repeat;
+	background-size: 62%;
+	padding: 17px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:  0 auto;
+}
+.rectangle2L,
+.rectangle2R{
+	height: 5px;
+	width: 22px;
+	background-color: #d7d8d9;
+}
+.rectangle2L{
+	margin-right: 20px;
+}
+.rectangle2R{
+	margin-left: 20px;
+}
