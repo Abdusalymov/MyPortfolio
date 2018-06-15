@@ -120,18 +120,7 @@
 	.can_I_help p{
 		width: 100%;
 	}
-	/* .contacts_wrapper{
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.contacts{
-		width: 380px;
-	}
-	.contacts ul{
-		padding-left: 40px;
-	} */
+	
 }
 @media only screen and (min-width:1200px){
 
@@ -183,36 +172,9 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 	}
-	
-	/* .up_side{
-		height: 70px;
-		justify-content: space-between;
-		flex-direction: row;
-		padding: 0 40px;
-	}
-	.up_side .menu_footer{
-		margin: 0;
-	}
-	.down_side{
-		height: 70px;
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 0 40px;
-	}
-	.my_text p{
-		width: 500px;
-		margin: 0;
-		text-align: left;
-	}
-	.copyright p{
-		text-align: right;
-	} */
 }
 @media only screen and (min-width: 1600px){
-	/* .contacts_footer_wrapper{
-		background: url('../images/other/map_1600px.jpg') center no-repeat;
-		background-size: cover;
-	} */
+	
 	.svg_align_frontSkills, 
 	.svg_align_backSkills,
 	.svg_align_flowSkills{
