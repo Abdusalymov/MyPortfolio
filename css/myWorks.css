@@ -70,7 +70,7 @@ header{
 	height: 19.125px;
 	fill: red;
 }
-button {
+.button_to_school {
 	background: url('../images/icon/link.svg')#00bfa5 10% center no-repeat;
 	border: none;
 	display: block;
@@ -83,6 +83,93 @@ button {
 }
 .link_to_school{
 	text-decoration: none;
+}
+.talking_about_me{
+	padding: 0 10px;
+}
+.talking_about_me h2{
+	width: 250px;
+	background: url(../images/icon/about_header.svg);
+	font: 2.1875rem bernierRegular;
+	color: #373e42;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	background: url('../images/icon/about_header.svg') center no-repeat;
+	background-size: contain;
+	padding: 21px 0;
+}
+.apostrophe {
+	opacity: .1;
+	font: 2.25rem awesom;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+.comment{
+	color: #455a64;
+	font: .875rem robotoR;
+	line-height: 24px;
+	text-align: left;
+}
+.Kovalchuk{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start ;
+}
+.kovalchuk_photo {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50px;
+	background: url('../images/other/kovalchuk.png') 27% 20% no-repeat;
+	background-size: 121%;
+	margin-right: 20px;
+}
+.sign{
+	color: #20b5a1;
+	font: .875rem robotoB;
+	margin: 5px 0 0 0;
+}
+.position_in_company{
+	color: #20b5a1;
+	font: .875rem robotoR;
+	margin: 5px 0 0 0;
+}
+.Zaharov{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start ;
+}
+.zaharov_photo{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50px;
+	background: url('../images/other/zaharov.jpg') 27% 20% no-repeat;
+	background-size: 100%;
+	margin-right: 20px;
+}
+.bg_containerForm{
+	background: url('../images/other/footerBG_myWorks_1000.jpg') no-repeat;
+	background-size: cover;
+}
+.wrapper_for_form{
+	width: 300px;
+	margin: 0 auto;
+	filter: blur(15px);
+	background: red;
+	z-index: 100;
+}
+.wrapper_for_form h2{
+	z-index: 1000;
+	position: absolute;
+}
+form{
+	display: flex;
+	flex-direction: column;
 }
 @media only screen and (min-width: 800px){
 	.my_works{
