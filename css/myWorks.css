@@ -86,6 +86,8 @@ header{
 }
 .talking_about_me{
 	padding: 0 10px;
+	background: url('../images/other/footerBG_myWorks_1000.jpg') 0% 140% no-repeat;
+
 }
 .talking_about_me h2{
 	width: 250px;
@@ -152,24 +154,78 @@ header{
 	background-size: 100%;
 	margin-right: 20px;
 }
-.bg_containerForm{
-	background: url('../images/other/footerBG_myWorks_1000.jpg') no-repeat;
-	background-size: cover;
-}
 .wrapper_for_form{
 	width: 300px;
-	margin: 0 auto;
-	filter: blur(15px);
-	background: red;
-	z-index: 100;
+	background: url('../images/other/blur_bg_footer_myWorks.jpg') 60% 52% no-repeat;
+	border-radius: 5px;
+	margin: 40px auto 0 auto;
 }
 .wrapper_for_form h2{
-	z-index: 1000;
-	position: absolute;
+	font: 1.3125rem bernierRegular;
+	background: none;
 }
 form{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+}
+input[type="text"],
+input[type="email"]{
+	border: none;
+	margin-bottom: 20px;
+	height: 45px;
+	border-radius: 5px;
+	font: .875rem robotoR;
+	padding-left: 20px;
+	color: #373e42;
+}
+
+textarea{
+	border: none;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	font: .875rem robotoR;
+	padding: 20px 0 0 15px;
+	color: #373e42;
+}
+.btns_wrapper{
+	display: flex;
+}
+.btns_wrapper button{
+	width: 100%;
+	height: 45px;
+	border-top: none; 
+	border-bottom: none; 
+	font: .875rem robotoM;
+	color: #fff;
+	cursor: pointer;
+}
+.btn_send{
+	background: #26bcaa;
+	border-right: 1px solid #4bb6ad;
+	border-left: none;
+	border-radius: 0 0 0 5px;
+}
+.btn_clear{
+	background: #278d8b;
+	border-left: 1px solid #4baba6;
+	border-right: none;
+	border-radius: 0 0 5px 0;
+}
+.arrow_up{
+	text-align: center;
+	padding: 50px 0 40px 0;
+}
+.arrow_up .inline-svg-arrow-up{
+	height: 20px;
+	width: 30px;
+	fill: rgba(255,255,255, .7);
+	cursor: pointer;
+}
+.arrow_up .inline-svg-arrow-up:hover{
+	fill: #fff;
 }
 @media only screen and (min-width: 800px){
 	.my_works{
@@ -197,3 +253,4 @@ form{
 		background-size: 100% 33%,cover;
 	}
 } 
+
