@@ -38,8 +38,12 @@ header{
 }
 
 .my_works_content{
-	height: 100px;
 	background: #eeebe0;
+}
+.my_works_content img{
+	width: 100%;
+	height: 100%;
+	padding: 30px 0;
 }
 .school_education{
 	background: #f0efe9;
@@ -52,11 +56,16 @@ header{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin: 0; 
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 76%;
+
 }
 .teсhnology_line{
+	max-width: 420px;
 	width: 98%;
 	margin: 0 auto;
+	padding: 10px 0;
 	border-top: 1px solid #c0ddd6;
 	border-bottom: 1px solid #c0ddd6;
 	text-align: center
@@ -81,7 +90,29 @@ header{
 	margin: 0 auto;
 	cursor: pointer;
 }
+.vertical_slaider{
+	display: flex;
+}
+.vertical_slaider img{
+	width: 100%;
+}
+.slaid1,
+.slaid2{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inline-svg-slaider{
+	fill: #fff;
+	height: 27px;
+	width: 42px;
+	position: absolute;
+	cursor: pointer;
+}
 .link_to_school{
+	display: block;
+	padding: 25px 0 35px 0;
 	text-decoration: none;
 }
 .talking_about_me{
@@ -89,18 +120,21 @@ header{
 	background: url('../images/other/footerBG_myWorks_1000.jpg') 0% 140% no-repeat;
 
 }
-.talking_about_me h2{
+.headline_sayAboutMe{
 	width: 250px;
-	background: url(../images/icon/about_header.svg);
+	/* background: url(../images/icon/about_header.svg); */
 	font: 2.1875rem bernierRegular;
+	background: url('../images/icon/about_header.svg') center no-repeat;
+	background-size: contain;
+	width: 72%;
+}
+.headline_style{
 	color: #373e42;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	margin: 0 auto;
-	background: url('../images/icon/about_header.svg') center no-repeat;
-	background-size: contain;
 	padding: 21px 0;
 }
 .apostrophe {
@@ -140,6 +174,7 @@ header{
 	font: .875rem robotoR;
 	margin: 5px 0 0 0;
 }
+
 .Zaharov{
 	display: flex;
 	align-items: flex-start;
@@ -155,20 +190,22 @@ header{
 	margin-right: 20px;
 }
 .wrapper_for_form{
-	width: 300px;
-	background: url('../images/other/blur_bg_footer_myWorks.jpg') 60% 52% no-repeat;
+	width: 93%;
+	max-width: 380px;
+	background: url('../images/other/blur_bg_footer_myWorks.jpg')  no-repeat;
+	background-position: center;
 	border-radius: 5px;
 	margin: 40px auto 0 auto;
 }
-.wrapper_for_form h2{
+.headline_form{
 	font: 1.3125rem bernierRegular;
-	background: none;
+	width: 84%;
 }
 form{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 90%;
+	width: 86%;
 	margin: auto;
 }
 input[type="text"],
@@ -233,15 +270,89 @@ textarea{
 		font-size: 3.0625rem;
 		bottom: 0;
 	}
+	.school_education h2{
+		font-size: 1.875rem;
+	}
+	.teсhnology_line span,
+	.button_to_school{
+		font-size: 1rem;
+	}
+	.talking_about_me{
+		background: url(../images/other/footerBG_myWorks_1400.jpg) no-repeat;
+	}
+	.headline_sayAboutMe{
+		font-size: 3.0625rem;
+	}
+	.block_comments{
+		display: flex;
+	}
+	.apostrophe {
+		text-align: left;
+	}
+	.zaharov_photo,
+	.kovalchuk_photo{
+		width: 80px;
+		height: 80px;
+	}
+	.sign {
+    margin: 15px 0 0 0;
+	}
+	.wrapper_for_form{
+		background-position: 20% 42%;
+	}
+	.headline_form{
+		font-size: 1.875rem;
+	}
 } 
 @media only screen and (min-width: 1200px){
 	.my_works{
 		width: 475px;
 		font-size: 3.9375rem;
-		
+	}
+	.headline_sayAboutMeh2{
+		font-size: 3.9375rem;
 	}
 	header{
 		background-size: 100% 30%,cover;
+	}
+	.wrapper_myworks_school_slaider{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	.school_education{
+		grid-row-start: 1;
+		grid-row-end: 3;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.school_education h2{
+		width: 58%;
+		font-size: 2.1875rem;
+	}
+	.my_works_content{
+		padding: 80px 0;
+	}
+	.my_works_content img{
+		padding: 0;
+	}
+	.talking_about_me{
+		padding: 50px 0;
+	}
+	.block_comments{
+		width: 63%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	.Kovalchuk_comment_block,
+	.Zaharov_comment_block{
+		width: 47%;
+	}
+	.talking_about_me{
+		background: url(../images/other/footerBG_myWorks_1900.jpg) 100% no-repeat;
+	}
+	.wrapper_for_form{
+		background-position: 28% 62%;
 	}
 } 
 
