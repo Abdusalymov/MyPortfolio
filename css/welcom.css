@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import 'font.css';
+@import 'variables.css';
 
 .container {
 	position: relative;
@@ -50,7 +51,7 @@
 .authorization_btn p a{
 	text-decoration: none;
 	color: #fff;
-	font: 1rem robotoM;
+	font: 1rem var(--fontStyle2);
 	border: 1px solid #fff;
 	border-radius: 5px;
 	padding: 10px 25px;
@@ -92,12 +93,12 @@
 	margin: auto;
 }
 .me h1{
-	font: 1.3125rem robotoM;
-	color: #455a64;
+	font: 1.3125rem var(--fontStyle2);
+	color: var(--textColor);
 }
 .me h2{
-	font: .875rem robotoR;
-	color: #455a64;
+	font: .875rem var(--fontStyle3);
+	color: var(--textColor);
 	margin-top: 0;
 }
 .social_line{
@@ -140,7 +141,7 @@
 .menu_line a{
 	text-decoration: none;
 	color: #fff;
-	font: .875rem robotoM;
+	font: .875rem var(--fontStyle2);
 	background-color: rgba(0, 191, 165, 0.85);
 	padding: 15px 0;
 	width: 100%;

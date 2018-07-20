@@ -2,6 +2,8 @@
 @import 'font.css';
 @import 'header.css';
 @import 'footer.css';
+@import 'variables.css';
+
 .wrapper_who_am_I{
 	max-width: 470px;
 	margin: auto;
@@ -22,8 +24,8 @@
 }
 .who_am_I h1{
 	max-width: 355px;
-	font: 2.1875rem bernierRegular;
-	color: #373e42;
+	font: 2.1875rem var(--fontStyle);
+	color: var(--textColor2);
 	background: url('../images/icon/about_header.svg') top no-repeat;
 	background-size: 62%;
 	padding: 17px 0;
@@ -33,15 +35,15 @@
 	margin:  0 auto;
 }
 .who_am_I h2{
-	font: 1.3125rem bernierRegular;
-	color: #455a64;
+	font: 1.3125rem var(--fontStyle);
+	color: var(--textColor);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .who_am_I p{
-	font: .875rem RobotoR;
-	color: #455a64;
+	font: .875rem var(--fontStyle3);
+	color: var(--textColor);
 	text-align: left;
 	line-height: 24px;
 	max-width: 470px;
@@ -57,8 +59,8 @@
 	margin: auto;
 }
 .can_I_help h2{
-	font: 1.3125rem bernierRegular;
-	color: #455a64;
+	font: 1.3125rem var(--fontStyle);
+	color: var(--textColor);
 	text-align: center;
 	margin: 0;
 	padding: 30px 0 10px 0;
@@ -80,13 +82,13 @@
 }
 
 .can_I_help h3{
-	font: 1.3125rem RobotoM;
+	font: 1.3125rem var(--fontStyle2);
 	color: #4d5963;
 	text-align: center;
 }
 .can_I_help p{
-	font: .875rem RobotoR;
-	color: #455a64;
+	font: .875rem var(--fontStyle3);
+	color: var(--textColor);
 	text-align: left;
 	line-height: 24px;
 	width: 95%;
@@ -99,7 +101,7 @@
 	stroke: #10c0a7;
 }
 .can_I_help svg text{
-	font: .8125rem RobotoM;
+	font: .8125rem var(--fontStyle2);
 	fill: #10c0a7;
 }
 .svg_align_frontSkills,

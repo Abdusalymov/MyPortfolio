@@ -1,3 +1,4 @@
+@import 'variables.css';
 body{
 	max-width: 1800px;
 }
@@ -45,7 +46,7 @@ header{
 .open_menu li a{
 	text-decoration: none;
 	color: #ffffff;
-	font: 2.18rem bernierRegular;
+	font: 2.18rem var(--fontStyle);
 }
 
 .rectangleL,
@@ -108,7 +109,7 @@ header{
 }
 
 .me_about h1{
-	font: 1.3125rem robotoM;
+	font: 1.3125rem var(--fontStyle2);
 	color: #fff;
 	margin-bottom: 5px;
 }
@@ -145,7 +146,7 @@ header{
 		margin-top: -300px;
 	}
 	.me_about h1{
-		font: 2.1875rem robotoM;
+		font: 2.1875rem var(--fontStyle2);
 	}
 	.me_about h2{
 		font: 1rem robotoL;

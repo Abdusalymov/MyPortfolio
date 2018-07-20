@@ -1,3 +1,4 @@
+@import 'variables.css';
 .contacts_footer_wrapper{
 	height: 100vh;
 	width: 100%;
@@ -15,8 +16,8 @@
 }
 .contacts h1{
 	text-align: center;
-	font: 2.1875rem bernierRegular;
-	color: #373e42;
+	font: 2.1875rem var(--fontStyle);
+	color: var(--textColor2);
 	margin-top: 0;
 	padding-top: 20px;
 }
@@ -37,8 +38,8 @@
 }
 .contacts li,
 .contacts li a{
-	color: #455a64;
-	font: 1rem RobotoM;
+	color: var(--textColor);
+	font: 1rem var(--fontStyle2);
 	text-decoration: none;
 	list-style-type: none;
 }
@@ -88,7 +89,7 @@ footer{
 }
 .up_side .menu_footer li a{
 	color: #ffffff;
-	font: .8125rem robotoM;
+	font: .8125rem var(--fontStyle2);
 	text-decoration: none;
 }
 .up_side .menu_footer li,

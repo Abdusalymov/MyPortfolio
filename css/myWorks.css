@@ -2,6 +2,7 @@
 @import 'font.css';
 @import 'header.css';
 @import 'footer.css';
+@import 'variables.css';
 header{
 	background:url('../images/icon/bg.svg')bottom no-repeat,
 	url('../images/other/mountains_for_iphone.jpg') center no-repeat;
@@ -10,8 +11,8 @@ header{
 
 .my_works {
 	width: 250px;
-	font: 2.1875rem bernierRegular;
-	color: #373e42;
+	font: 2.1875rem var(--fontStyle);
+	color: var(--textColor2);
 	background: url('../images/icon/works_header.svg') center no-repeat;
 	background-size: contain;
 	padding: 21px 0;
@@ -50,8 +51,8 @@ header{
 }
 
 .school_education h2{
-	color: #455a64;
-	font: 1.3125rem bernierRegular;
+	color: var(--textColor);
+	font: 1.3125rem var(--fontStyle);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -72,7 +73,7 @@ header{
 }
 .teсhnology_line span{
 	color: #20b5a1;
-	font: .875rem robotoM;
+	font: .875rem var(--fontStyle2);
 }
 .inline-svg-link{
 	width: 20px;
@@ -85,7 +86,7 @@ header{
 	display: block;
 	padding: 10px 19px 10px 50px;
 	border-radius: 5px;
-	font: .875rem robotoM;
+	font: .875rem var(--fontStyle2);
 	color: #fff;
 	margin: 0 auto;
 	cursor: pointer;
@@ -118,18 +119,16 @@ header{
 .talking_about_me{
 	padding: 0 10px;
 	background: url('../images/other/footerBG_myWorks_1000.jpg') 0% 140% no-repeat;
-
 }
 .headline_sayAboutMe{
 	width: 250px;
-	/* background: url(../images/icon/about_header.svg); */
-	font: 2.1875rem bernierRegular;
+	font: 2.1875rem var(--fontStyle);
 	background: url('../images/icon/about_header.svg') center no-repeat;
 	background-size: contain;
 	width: 72%;
 }
 .headline_style{
-	color: #373e42;
+	color: var(--textColor2);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -145,8 +144,8 @@ header{
 	text-align: center;
 }
 .comment{
-	color: #455a64;
-	font: .875rem robotoR;
+	color: var(--textColor);
+	font: .875rem var(--fontStyle3);
 	line-height: 24px;
 	text-align: left;
 }
@@ -171,7 +170,7 @@ header{
 }
 .position_in_company{
 	color: #20b5a1;
-	font: .875rem robotoR;
+	font: .875rem var(--fontStyle3);
 	margin: 5px 0 0 0;
 }
 
@@ -198,7 +197,7 @@ header{
 	margin: 40px auto 0 auto;
 }
 .headline_form{
-	font: 1.3125rem bernierRegular;
+	font: 1.3125rem var(--fontStyle);
 	width: 84%;
 }
 form{
@@ -214,18 +213,18 @@ input[type="email"]{
 	margin-bottom: 20px;
 	height: 45px;
 	border-radius: 5px;
-	font: .875rem robotoR;
+	font: .875rem var(--fontStyle3);
 	padding-left: 20px;
-	color: #373e42;
+	color: var(--textColor2);
 }
 
 textarea{
 	border: none;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	font: .875rem robotoR;
+	font: .875rem var(--fontStyle3);
 	padding: 20px 0 0 15px;
-	color: #373e42;
+	color: var(--textColor2);
 }
 .btns_wrapper{
 	display: flex;
@@ -235,7 +234,7 @@ textarea{
 	height: 45px;
 	border-top: none; 
 	border-bottom: none; 
-	font: .875rem robotoM;
+	font: .875rem var(--fontStyle2);
 	color: #fff;
 	cursor: pointer;
 }

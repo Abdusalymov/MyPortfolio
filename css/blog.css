@@ -2,6 +2,8 @@
 @import 'font.css';
 @import 'header.css';
 @import 'footer.css';
+@import 'variables.css';
+
 header{
 	background:url('../images/icon/bg_white.svg'),
 	url('../images/icon/blog_header.svg') ,
@@ -14,12 +16,11 @@ header{
 	top: 75%;
 }
 .me_about .main_header_blog{
-	font: 3.0625rem bernierRegular;
+	font: 3.0625rem var(--fontStyle);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	/* background:url('../images/icon/blog_header.svg') center no-repeat; */
 	background-size: cover;
 }
 .me_about h2{
@@ -48,8 +49,8 @@ header{
 	margin-top: 0;
 }
 .blog_post h2{
-	font: 1.3125rem bernierRegular;
-	color: #455a64;
+	font: 1.3125rem var(--fontStyle);
+	color: var(--textColor);
 	margin-bottom: 10px;
 
 }
@@ -59,7 +60,7 @@ header{
 }
 .blog_content{
 	font: .875rem robotoR;
-	color: #455a64;
+	color: var(--textColor);
 	line-height: 21px;
 	margin-top: 10px;
 	margin-bottom: 20px;
